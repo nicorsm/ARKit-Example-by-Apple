@@ -19,6 +19,11 @@
 		39C0B95A1E9C6B1F003FCA0C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C0B9581E9C6B1F003FCA0C /* Utilities.swift */; };
 		39D4A8BE1EA1AF530006EC65 /* PlaneDebugVisualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4A8BD1EA1AF530006EC65 /* PlaneDebugVisualization.swift */; };
 		39D8DC1B1E8ADAE600386B05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D8DC1A1E8ADAE600386B05 /* LaunchScreen.storyboard */; };
+		B313E6F31F249BA40048D215 /* ARVirtualObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B313E6F21F249BA40048D215 /* ARVirtualObjectManager.swift */; };
+		B3DE81A51F2353C0004C0681 /* Domagnano.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE81A41F2353C0004C0681 /* Domagnano.swift */; };
+		B3DE81A71F2376C6004C0681 /* ARSCNViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE81A61F2376C6004C0681 /* ARSCNViewManager.swift */; };
+		B3DE81A91F2377DA004C0681 /* ARSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE81A81F2377DA004C0681 /* ARSessionManager.swift */; };
+		B3DE81AB1F23790B004C0681 /* ARDebugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE81AA1F23790B004C0681 /* ARDebugManager.swift */; };
 		C40FE5291EC239F100732B01 /* Candle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FE5231EC239F100732B01 /* Candle.swift */; };
 		C40FE52A1EC239F100732B01 /* Chair.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FE5241EC239F100732B01 /* Chair.swift */; };
 		C40FE52B1EC239F100732B01 /* Cup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40FE5251EC239F100732B01 /* Cup.swift */; };
@@ -48,6 +53,11 @@
 		39C0B9581E9C6B1F003FCA0C /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		39D4A8BD1EA1AF530006EC65 /* PlaneDebugVisualization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneDebugVisualization.swift; sourceTree = "<group>"; };
 		39D8DC1A1E8ADAE600386B05 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B313E6F21F249BA40048D215 /* ARVirtualObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVirtualObjectManager.swift; sourceTree = "<group>"; };
+		B3DE81A41F2353C0004C0681 /* Domagnano.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Domagnano.swift; path = ../../../../Downloads/Domagnano.swift; sourceTree = "<group>"; };
+		B3DE81A61F2376C6004C0681 /* ARSCNViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSCNViewManager.swift; sourceTree = "<group>"; };
+		B3DE81A81F2377DA004C0681 /* ARSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionManager.swift; sourceTree = "<group>"; };
+		B3DE81AA1F23790B004C0681 /* ARDebugManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDebugManager.swift; sourceTree = "<group>"; };
 		C40FE5231EC239F100732B01 /* Candle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Candle.swift; path = "ARKitExample/Virtual Objects/Candle.swift"; sourceTree = SOURCE_ROOT; };
 		C40FE5241EC239F100732B01 /* Chair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chair.swift; path = "ARKitExample/Virtual Objects/Chair.swift"; sourceTree = SOURCE_ROOT; };
 		C40FE5251EC239F100732B01 /* Cup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cup.swift; path = "ARKitExample/Virtual Objects/Cup.swift"; sourceTree = SOURCE_ROOT; };
@@ -107,6 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				3929C48B1E89EC2C00E00B60 /* AppDelegate.swift */,
+				B3DE81A61F2376C6004C0681 /* ARSCNViewManager.swift */,
+				B3DE81A81F2377DA004C0681 /* ARSessionManager.swift */,
+				B3DE81AA1F23790B004C0681 /* ARDebugManager.swift */,
+				B313E6F21F249BA40048D215 /* ARVirtualObjectManager.swift */,
 				3929C48D1E89EC2C00E00B60 /* ViewController.swift */,
 				C40DF57B1EC2330700D9D59E /* Virtual Objects */,
 				113B64D01ECA81CA0071CBD1 /* UI Elements */,
@@ -141,6 +155,7 @@
 				C40FE5251EC239F100732B01 /* Cup.swift */,
 				C40FE5261EC239F100732B01 /* Lamp.swift */,
 				C40FE5281EC239F100732B01 /* Vase.swift */,
+				B3DE81A41F2353C0004C0681 /* Domagnano.swift */,
 			);
 			path = "Virtual Objects";
 			sourceTree = "<group>";
@@ -185,7 +200,7 @@
 				TargetAttributes = {
 					3929C4871E89EC2C00E00B60 = {
 						CreatedOnToolsVersion = 9.0;
-						DevelopmentTeam = Z27YUCTD32;
+						DevelopmentTeam = C8D6ZTZR83;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -234,6 +249,8 @@
 				3929C48E1E89EC2C00E00B60 /* ViewController.swift in Sources */,
 				C41366B91EB80DD400EC054A /* TextManager.swift in Sources */,
 				39C0B95A1E9C6B1F003FCA0C /* Utilities.swift in Sources */,
+				B3DE81A71F2376C6004C0681 /* ARSCNViewManager.swift in Sources */,
+				B313E6F31F249BA40048D215 /* ARVirtualObjectManager.swift in Sources */,
 				C40FE52E1EC239F100732B01 /* Vase.swift in Sources */,
 				392BB82C1EA19A7C00FBBAC8 /* Plane.swift in Sources */,
 				3987BEDC1E9E057F00167FAC /* Gesture.swift in Sources */,
@@ -242,9 +259,12 @@
 				39D4A8BE1EA1AF530006EC65 /* PlaneDebugVisualization.swift in Sources */,
 				39C0B9591E9C6B1F003FCA0C /* SettingsViewController.swift in Sources */,
 				C490DAC41E9AB63400210960 /* VirtualObjectSelectionViewController.swift in Sources */,
+				B3DE81A91F2377DA004C0681 /* ARSessionManager.swift in Sources */,
+				B3DE81AB1F23790B004C0681 /* ARDebugManager.swift in Sources */,
 				C42A71BD1E9C0AF200944367 /* FocusSquare.swift in Sources */,
 				3929C48C1E89EC2C00E00B60 /* AppDelegate.swift in Sources */,
 				C4FBC02B1EC6438B003F7864 /* ARCameraTrackingState.swift in Sources */,
+				B3DE81A51F2353C0004C0681 /* Domagnano.swift in Sources */,
 				C40FE52C1EC239F100732B01 /* Lamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +388,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z27YUCTD32;
+				DEVELOPMENT_TEAM = C8D6ZTZR83;
 				INFOPLIST_FILE = ARKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -388,7 +408,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z27YUCTD32;
+				DEVELOPMENT_TEAM = C8D6ZTZR83;
 				INFOPLIST_FILE = ARKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

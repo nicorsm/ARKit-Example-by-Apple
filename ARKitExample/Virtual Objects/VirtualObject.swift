@@ -13,7 +13,7 @@ class VirtualObject: SCNNode {
 	
 	var modelName: String = ""
 	var fileExtension: String = ""
-	var thumbImage: UIImage!
+    var thumbImage: UIImage?
 	var title: String = ""
 	var modelLoaded: Bool = false
 	
@@ -38,7 +38,7 @@ class VirtualObject: SCNNode {
 	}
 	
 	func loadModel() {
-		guard let virtualObjectScene = SCNScene(named: "\(modelName).\(fileExtension)", inDirectory: "Models.scnassets/\(modelName)") else {
+		guard let virtualObjectScene = SCNScene(named: "\(modelName).\(fileExtension)", inDirectory: "art.scnassets/\(modelName)") else {
 			return
 		}
 		
@@ -72,6 +72,7 @@ class VirtualObject: SCNNode {
 
 		controller.moveVirtualObjectToPosition(result.position, instantly, !result.hitAPlane)
 	}
+    
 }
 
 extension VirtualObject {
@@ -89,12 +90,11 @@ extension VirtualObject {
 	}
 	
 	static let availableObjects: [VirtualObject] = [
-		Candle(),
+		/*Candle(),
 		Cup(),
 		Vase(),
 		Lamp(),
-		Chair(),
-        Domagnano()
+		Chair()*/
 	]
 }
 
